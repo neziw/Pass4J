@@ -20,9 +20,7 @@ class Pass4J : JFrame() {
         defaultCloseOperation = JFrame.EXIT_ON_CLOSE
         setSize(450, 340)
         isResizable = false
-
         layout = GridLayout(5, 2)
-
         add(JLabel("Password length:"))
         add(lengthField)
         add(JLabel("Additional characters:"))
@@ -48,7 +46,6 @@ class Pass4J : JFrame() {
                 clipboard.setContents(selection, selection)
             }
         })
-
         isVisible = true
     }
 
